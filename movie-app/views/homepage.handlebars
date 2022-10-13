@@ -1,0 +1,31 @@
+<div class="home-page">
+  <form id="home-form" class=>
+    <div class="form-group">
+      <label for="genre">Genre</label>
+      <select class="form-control" id="genre">
+        <option>crime</option>
+        <option>drama</option>
+        <option>romance</option>
+        <option>horror</option>
+        <option>documentary</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="era">Era</label>
+      <select class="form-control" id="era">
+        <option>2000</option>
+        <option>1990</option>
+        <option>1980</option>
+        <option>1970</option>
+        <option>1960</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Suggest Movie</button>
+  </form>
+
+  <div id="suggestions" class="mt-4"></div>
+</div>
+
+  <span style="opacity: 0;" id="user_id">{{id}}</span>
+
+<script src="/javascript/homepage.js"></script>

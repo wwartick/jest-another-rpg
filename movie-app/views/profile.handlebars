@@ -1,0 +1,28 @@
+      <div class="row">
+        <!-- Posts Section -->
+        <div class="user-section col-sm-6 container-fluid">
+            <!-- new post -->
+            <div class="col-sm-12 user-area">
+              <h2 class="header">{{user.username}}'s Profile</h2>
+            </div>
+            <!-- old posts -->
+            <div id = "movieList" class="col-sm-12 container-fluid movie-recommendations">
+                <!-- Template for importing movie info, change as needed -->
+                {{#each user.movies}}
+                <div  class="movieRecc my-3">
+                    <h3>{{title}}</h3>
+                    <p class="movieNote">Thoughts:</p>
+                    <button id="btn{{id}}" onclick="deleteMovieHandler()">Delete</button>
+                    <span style="opacity: 0;" id="movie_id" class = "target">{{id}}</span>
+                </div>
+                {{/each}}
+                
+                <div id="loading" class="col-sm-12 order-12"></div>
+                <ul id="movie-ul" class="col-sm-12 order-12" style="list-style: none; margin-left: 0px;"></ul> 
+            </div>
+        </div>
+
+
+<script src="/javascript/profile.js"></script>
+
+    

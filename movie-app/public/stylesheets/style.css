@@ -1,0 +1,208 @@
+* {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+/* SIDEBAR AND NAV */
+html {
+    font-family: Arial;
+    font-size: 16px;
+    background: white;
+}
+
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: lightblue;
+    font-size: 20px;
+}
+
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    position: relative;
+    margin: 3.2em 0;
+}
+
+.nav ul li a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: white;
+    display: block;
+    transition: all ease-out 300ms;
+}
+
+.nav ul li.active a {
+    color: white;
+}
+
+.nav ul li:not(.active)::after {
+    opacity: 0.2;
+}
+
+.nav ul li:not(.active):hover a {
+    color: blue;
+}
+
+.nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: blue;
+    left: 0;
+    bottom: 0;
+    background-image: blue;
+}
+
+/* SEARCH BAR */
+#wrap {
+    margin: 50px 100px;
+    position: relative;
+    height: 60px;
+    float: right;
+    padding: 0;
+    position: relative;
+  }
+  
+  input[type="text"] {
+    height: 60px;
+    font-size: 20px;
+    display: inline-block;
+    font-family: "Lato";
+    font-weight: 100;
+    border: none;
+    outline: none;
+    color: blue;
+    padding: 3px;
+    padding-right: 60px;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+  }
+  
+  input[type="text"]:focus:hover {
+    border-bottom: 1px solid blue;
+  }
+  
+  input[type="text"]:focus {
+    width: 700px;
+    z-index: 1;
+    border-bottom: 1px solid blue;
+    cursor: text;
+  }
+  input[type="submit"] {
+    height: 60px;
+    width: 60px;
+    color:blue;
+    float: right;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=) center center no-repeat;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .4s ease;
+  }
+  
+  input[type="submit"]:hover {
+    opacity: 0.8;
+  }
+
+  /* RECENT RELEASES */
+  .releases h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: blue;
+    position: relative;
+    left: 900px;
+    top: 150px;
+  }
+
+  /* HOT TOPICS */
+  .topics h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: blue;
+    position: relative;
+    left: 943px;
+    top: 500px;
+  }
+
+  /* LOGIN/SIGNUP PAGES */
+  body{
+    background: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  h1{
+    color: blue;
+    padding-bottom: 2rem;
+    font-weight: bold;
+  }
+  a{
+    color: #333;
+  }
+  a:hover{
+    color: blue;
+    text-decoration: none;
+  }
+  .form-control:focus {
+  
+      color: #000;
+      background-color: white;
+      border:2px solid blue;
+      outline: 0;
+      box-shadow: none;
+  
+  }
+  
+  .btn{
+    background: blue;
+    border: lightblue;
+  }
+  .btn:hover {
+    background: lightblue;
+    border: blue;
+  }
+
+  .test-border {
+    border: red 5px solid;
+  }
+
+  .home-page {
+    margin-left: 500px;
+    margin-right: 200px;
+  }
+
+  .movie-text {
+    font-size: 30px;
+  }

@@ -1,0 +1,106 @@
+.main,
+.main .row,
+.user-section {
+    height: 100%;
+}
+
+.user-area .header {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.movieForm {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    font-family: "Lato";
+    font-weight: 100;
+}
+
+.movieForm .form-group {
+    padding: 0 0 55px 0;
+}
+
+.movieForm input {
+    outline: none;
+    padding: 12px;
+    width: 100%;
+    min-width: 100%;
+    font-size: 2.0rem;
+    background-color: white;
+    border: 4px solid rgba(0,0,255,0.2);
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 5px 5px grey;
+}
+
+.form-group {
+    flex: 1 100%;
+}
+
+.user-area {
+    height: auto;
+}
+
+.selectDropdown {
+    display: block;
+    font-size: 2.0rem;
+    padding: 12px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    background-color: white;
+    border: 4px solid rgba(0,0,255,0.2);
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 5px 5px grey;
+}
+
+.movieForm .form-group .button {
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgba(0,0,255,0.2);
+    font-size: 2.0rem;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+    transition: 0.3s;
+    box-shadow: 0 5px 5px grey;
+}
+
+.movieRecc {
+    font-family: "Lato";
+    display: block;
+    padding: 12px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    background-color: white;
+    border: 4px solid rgba(0,0,255,0.2);
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 5px 5px grey;
+}
+
+.form-group .button:hover {
+    background-color: rgba(0,0,255,1);
+}
+
+.movieForm input:hover,
+.selectDropdown:hover,
+.movieRecc:hover {
+    border-color: rgba(0,0,255,1);
+}
+
+.movieForm input:focus,
+.selectDropdown:focus,
+.movieRecc:focus {
+    border-color: rgba(0,0,255,1);
+}
